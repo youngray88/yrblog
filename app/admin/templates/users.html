@@ -1,0 +1,16 @@
+{% extends "admin_base.html" %}
+{% block app_content %}
+    <ul class="list-group list-group-flush">
+    {% for user in users %}
+        <li class="list-group-item">
+            <span>name: {{ user.username }}</span>
+            <span>role:
+                {% for role in user.role %}
+                    {{ role.name }}
+                {% endfor %}
+            </span>
+            <span><a href="{{ url_for('admin.user_edit_role',user_id=user.id) }}">edit role</a></span>
+        </li>
+    {% endfor %}
+    </ul>
+{% endblock %}

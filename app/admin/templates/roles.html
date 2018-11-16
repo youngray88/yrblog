@@ -1,0 +1,30 @@
+{% extends "admin_base.html" %}
+{% block app_content %}
+
+    <ul class="list-group list-group-flush">
+    {% for role in roles %}
+        <li class="list-group-item">
+            <span>name: {{ role.name }}</span><br>
+            <span>permission:
+                {% for perm in role.perms %}
+                    {{ perm.name }}
+                {% endfor %}
+            </span>
+            <span><a href="{{ url_for('admin.roles_edit', roleid=role.id) }}">edit role</a></span>
+            <span>
+                <form action="{{ url_for('admin.roles_del', roleid=role.id) }}" method="post" >
+                    {{ form_del.hidden_tag() }}{{ form_del.submit() }}
+                </form>
+            </span>
+        </li>
+    {% endfor %}
+    </ul>
+    <form action="" method="post">
+        {{ form.hidden_tag() }}
+        <p>{{ form.role.label }}:{{ form.role(size=30) }}</p>
+        {% for error in form.role.errors %}
+            <span style="color:red">[{{ error }}]</span>
+        {% endfor %}
+        <p>{{ form.submit() }}</p>
+    </form>
+{% endblock %}

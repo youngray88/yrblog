@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    {{ bootstrap.load_css() }}
+    <title>{% if title %} {{ title }} - Microblog {% else %} Welcome to Microblog{% endif %}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maxmum-scale=1,user-scalable=no">
+</head>
+<body>
+{% from 'bootstrap/nav.html' import render_nav_item %}
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+
+        <div class="navbar-nav mr-auto">
+            {{ render_nav_item('main.index', 'Blog') }}
+            {{ render_nav_item('admin.users_setup', 'USERS') }}
+            {{ render_nav_item('admin.roles_setup', 'ROLES') }}
+        </div>
+        <div class="navbar navbar-expand-md navbar-right">
+            {% if current_user.is_anonymous %}
+                hello, anonymous
+                {{ render_nav_item('auth.login', 'Login') }}
+            {% else %}
+                hello, {{ current_user.username }}
+                {{ render_nav_item('auth.logout', 'Logout') }}
+            {% endif %}
+        </div>
+    </div>
+</nav>
+<div class="container">
+{% block content %}
+    {% with messages = get_flashed_messages() %}
+    {% if messages %}
+        <ul>
+            {% for message in messages %}
+            <li> {{ message }} </li>
+            {% endfor %}
+        </ul>
+    {% endif %}
+    {% endwith %}
+
+    {# 主体部分 #}
+    {% block app_content %}{% endblock %}
+{% endblock %}
+
+{% block script %}
+    {#    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>#}
+    {{ bootstrap.load_js() }}
+    {{ moment.include_moment() }}
+    {{ moment.lang('zh-CN') }}
+    <script>
+        function translate(sourceElem, destElem, sourceLan, destLan){
+            $(destElem).html('<img src = "{{ url_for('static', filename='loading.gif') }}">');
+            $.get('/translate',{
+                text:$(sourceElem).text(),
+                from:sourceLan,
+                to:destLan
+            }).done(function(json){
+                $(destElem).text(json.trans_result[0].dst)
+            }).fail(function(){
+                $(destElem).text('Server error')
+            })
+        }
+    </script>
+{% endblock %}
+</div>
+</body>
+</html>

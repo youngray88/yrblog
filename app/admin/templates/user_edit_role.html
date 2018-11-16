@@ -1,0 +1,13 @@
+{% extends "admin_base.html" %}
+{% block app_content %}
+    <h1>User:{{ user.username }}</h1>
+    <form action="" method="post">
+        {{ form.hidden_tag() }}
+        {{ form.roles.label }}:
+        {{ form.roles() }}
+        {% for error in form.roles.errors %}
+            <span style="color:red">[{{ error }}]</span>
+        {% endfor %}
+        {{ form.submit() }}
+    </form>
+{% endblock %}

@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="row">
+    <div class="col-8">
+        {% if current_user.can_do('POST_WRITE') %}
+        <form action = '' method="post">
+            {{ render_form(form) }}
+        </form>
+        {% endif %}
+        <h5>
+            {{ posts|length }} posts
+            <small class="float-right"><a href="#bottom" title="Go Bottom">&darr;</a></small>
+        </h5>
+        <ul class="list-group">
+            {% for post in posts %}
+                {% include '_post.html' %}
+            {% endfor %}
+            {% include '_paginate.html' %}
+        </ul>
+    </div>
+    <div class="co4">
+        followers:
+    </div>
+</div>
+{% endblock %}

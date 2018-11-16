@@ -1,0 +1,84 @@
+********
+2018-11-06 11:23:04,492 INFO: Microblog startup [in /Users/mac/Sites/python3-flask/microblog_1011/app/__init__.py:57]
+********
+2018-11-06 11:25:46,644 INFO: Microblog startup [in /Users/mac/Sites/python3-flask/microblog_1011/app/__init__.py:57]
+********
+2018-11-06 11:27:12,598 INFO: Microblog startup [in /Users/mac/Sites/python3-flask/microblog_1011/app/__init__.py:57]
+********
+2018-11-06 13:10:39,696 INFO: Microblog startup [in /Users/mac/Sites/python3-flask/microblog_1011/app/__init__.py:57]
+********
+2018-11-06 13:11:48,771 INFO: Microblog startup [in /Users/mac/Sites/python3-flask/microblog_1011/app/__init__.py:57]
+********
+2018-11-06 13:22:20,839 INFO: Microblog startup [in /Users/mac/Sites/python3-flask/microblog_1011/app/__init__.py:57]
+********
+2018-11-06 13:29:26,730 INFO: Microblog startup [in /Users/mac/Sites/python3-flask/microblog_1011/app/__init__.py:57]
+********
+2018-11-06 13:46:08,147 INFO: Microblog startup [in /Users/mac/Sites/python3-flask/microblog_1011/app/__init__.py:57]
+********
+2018-11-06 13:47:27,854 INFO: Microblog startup [in /Users/mac/Sites/python3-flask/microblog_1011/app/__init__.py:57]
+********
+2018-11-06 16:30:29,404 INFO: Microblog startup [in /Users/mac/Sites/python3-flask/microblog_1011/app/__init__.py:57]
+********
+2018-11-07 11:30:06,700 INFO: Microblog startup [in /Users/mac/Sites/python3-flask/microblog_1011/app/__init__.py:59]
+********
+2018-11-08 13:54:17,159 INFO: Microblog startup [in /Users/mac/Sites/python3-flask/microblog_1011/app/__init__.py:59]
+********
+2018-11-08 15:24:04,010 INFO: Microblog startup [in /Users/mac/Sites/python3-flask/microblog_1011/app/__init__.py:59]
+********
+2018-11-08 15:27:16,146 INFO: Microblog startup [in /Users/mac/Sites/python3-flask/microblog_1011/app/__init__.py:59]
+********
+2018-11-09 08:57:31,610 INFO: Microblog startup [in /Users/mac/Sites/python3-flask/microblog_1011/app/__init__.py:59]
+********
+2018-11-09 09:23:34,822 INFO: Microblog startup [in /Users/mac/Sites/python3-flask/microblog_1011/app/__init__.py:59]
+********
+2018-11-09 09:25:35,225 INFO: Microblog startup [in /Users/mac/Sites/python3-flask/microblog_1011/app/__init__.py:59]
+********
+2018-11-09 09:26:34,736 INFO: Microblog startup [in /Users/mac/Sites/python3-flask/microblog_1011/app/__init__.py:59]
+********
+2018-11-09 09:55:56,319 INFO: Microblog startup [in /Users/mac/Sites/python3-flask/microblog_1011/app/__init__.py:59]
+********
+2018-11-14 09:18:16,376 INFO: Microblog startup [in /Users/mac/Sites/python3-flask/microblog_1011/app/__init__.py:62]
+********
+2018-11-15 10:22:01,230 INFO: Microblog startup [in /Users/mac/Sites/python3-flask/microblog_1011/app/__init__.py:62]
+********
+2018-11-15 10:22:18,700 INFO: {"AccessLog": {"sessionId": "2018-11-15 02:22:18.697799", "status_code": 302, "method": "GET", "ip": "127.0.0.1", "url": "http://localhost:5000/", "referer": null, "agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:63.0) Gecko/20100101 Firefox/63.0", "user": "anonymous"}} [in /Users/mac/Sites/python3-flask/microblog_1011/app/main/routes.py:145]
+********
+2018-11-15 10:23:27,548 INFO: {"AccessLog": {"sessionId": "2018-11-15 02:22:18.697799", "status_code": 302, "method": "GET", "ip": "127.0.0.1", "url": "http://localhost:5000/index", "referer": "http://localhost:5000/auth/login?next=%2F", "agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:63.0) Gecko/20100101 Firefox/63.0", "user": "anonymous"}} [in /Users/mac/Sites/python3-flask/microblog_1011/app/main/routes.py:145]
+********
+2018-11-15 10:23:36,702 INFO: {"AccessLog": {"sessionId": "2018-11-15 02:22:18.697799", "status_code": 200, "method": "GET", "ip": "127.0.0.1", "url": "http://localhost:5000/index", "referer": "http://localhost:5000/auth/login?next=%2Findex", "agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:63.0) Gecko/20100101 Firefox/63.0", "user": "test1"}} [in /Users/mac/Sites/python3-flask/microblog_1011/app/main/routes.py:145]
+********
+2018-11-15 10:24:23,823 INFO: Microblog startup [in /Users/mac/Sites/python3-flask/microblog_1011/app/__init__.py:62]
+********
+2018-11-15 10:41:07,701 INFO: Microblog startup [in /Users/mac/Sites/python3-flask/microblog_1011/app/__init__.py:62]
+********
+2018-11-15 10:51:31,744 INFO: Microblog startup [in /Users/mac/Sites/python3-flask/microblog_1011/app/__init__.py:62]
+********
+2018-11-15 10:51:43,283 INFO: Microblog startup [in /Users/mac/Sites/python3-flask/microblog_1011/app/__init__.py:62]
+********
+2018-11-15 10:59:09,024 INFO: Microblog startup [in /Users/mac/Sites/python3-flask/microblog_1011/app/__init__.py:62]
+********
+2018-11-15 14:55:00,964 INFO: Microblog startup [in /Users/mac/Sites/python3-flask/microblog_1011/app/__init__.py:62]
+********
+2018-11-15 14:56:38,976 INFO: Microblog startup [in /Users/mac/Sites/python3-flask/microblog_1011/app/__init__.py:62]
+********
+2018-11-15 14:57:33,390 INFO: Microblog startup [in /Users/mac/Sites/python3-flask/microblog_1011/app/__init__.py:62]
+********
+2018-11-15 15:05:52,020 INFO: Microblog startup [in /Users/mac/Sites/python3-flask/microblog_1011/app/__init__.py:62]
+********
+2018-11-15 15:06:14,501 INFO: Microblog startup [in /Users/mac/Sites/python3-flask/microblog_1011/app/__init__.py:62]
+********
+2018-11-15 15:07:13,680 INFO: Microblog startup [in /Users/mac/Sites/python3-flask/microblog_1011/app/__init__.py:62]
+********
+2018-11-15 15:13:30,503 INFO: Microblog startup [in /Users/mac/Sites/python3-flask/microblog_1011/app/__init__.py:62]
+********
+2018-11-15 15:14:23,260 INFO: Microblog startup [in /Users/mac/Sites/python3-flask/microblog_1011/app/__init__.py:62]
+********
+2018-11-15 15:15:28,635 INFO: Microblog startup [in /Users/mac/Sites/python3-flask/microblog_1011/app/__init__.py:62]
+********
+2018-11-15 15:18:34,388 INFO: Microblog startup [in /Users/mac/Sites/python3-flask/microblog_1011/app/__init__.py:62]
+********
+2018-11-15 15:23:01,010 INFO: Microblog startup [in /Users/mac/Sites/python3-flask/microblog_1011/app/__init__.py:62]
+********
+2018-11-15 15:23:55,944 INFO: Microblog startup [in /Users/mac/Sites/python3-flask/microblog_1011/app/__init__.py:62]
+********
+2018-11-15 15:24:37,312 INFO: Microblog startup [in /Users/mac/Sites/python3-flask/microblog_1011/app/__init__.py:62]

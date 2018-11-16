@@ -1,0 +1,19 @@
+<nav aria-label="Page list">
+    <ul class="pagination">
+        {% if pagination.has_prev %}
+            <li class="page-item"><a class="page-link" href="{{ pagination.first_page }}">&laquo;</a></li>
+            <li class="page-item"><a class="page-link" href="{{ pagination.prev_page }}">prev</a></li>
+        {% else %}
+            <li class="page-item"><span class="page-link"  style="color:#999">&laquo;</span></li>
+            <li class="page-item"><span class="page-link"  style="color:#999">prev</span></li>
+        {% endif %}
+
+        {% if pagination.has_next %}
+            <li class="page-item"><a class="page-link" href="{{ pagination.next_page }}">next</a></li>
+            <li class="page-item"><a class="page-link" href="{{ pagination.last_page }}">&raquo;</a></li>
+        {% else %}
+            <li class="page-item"><span class="page-link"  style="color:#999">next</span></li>
+            <li class="page-item"><span class="page-link"  style="color:#999">&raquo;</span></li>
+        {% endif %}
+    </ul>
+</nav>

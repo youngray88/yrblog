@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% block content %}
+    <h1><img src="{{ user.get_avatar(60) }}" />{{ user.username }}</h1>
+    <div>
+        {% if user.about_me %}
+            {{ user.about_me }}
+        {% else %}
+            lazy, nothing left
+        {% endif %}
+        {% if user==current_user %}
+            <a href="{{ url_for('main.edit_profile') }}">edit</a>
+        {% elif not current_user.is_following(user) %}
+            <a href="{{ url_for('main.follow',username=user.username) }}">follow</a>
+        {% else %}
+            <a href="{{ url_for('main.unfollow',username=user.username) }}">unfollow</a>
+        {% endif %}
+        <br />last seen:{{ moment(user.last_seen).calendar() }}
+    </div>
+    {% if posts %}
+        {% for post in posts %}
+            {% include '_post.html' %}
+        {% endfor %}
+    {% else %}
+        has no post yet
+    {% endif %}
+{% endblock %}

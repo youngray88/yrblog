@@ -1,0 +1,14 @@
+{% extends "admin_base.html" %}
+{% block app_content %}
+    <h2> {{ role.name }}  edit </h2>
+
+    <form action="" method="post">
+    {{ form.hidden_tag() }}
+    {{ form.perms.label }}:{{ form.perms() }}
+        {% for error in form.perms.errors %}
+        <span style="color:red">[{{ error }}]</span>
+        {%  endfor %}
+    {{ form.submit() }}
+    </form>
+
+{% endblock %}
